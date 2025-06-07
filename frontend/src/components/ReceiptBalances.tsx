@@ -19,13 +19,13 @@ export const ReceiptBalances: React.FC<Props> = ({ account }) => {
       {sortedEntries.length === 0 ? (
         <p>아직 트랜잭션이 없습니다.</p>
       ) : (
-        <ul>
+        <ol>
           {sortedEntries.map(([tag, amt]) => (
             <li key={tag}>
               Tag <strong>{tag}</strong>: {amt}
             </li>
           ))}
-        </ul>
+        </ol>
       )}
     </div>
   );
